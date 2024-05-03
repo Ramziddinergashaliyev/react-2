@@ -7,7 +7,7 @@ function NavbarData() {
 
   const navbarItem = Navbar.map((nav) => {
     return <li className='navbar__list' key={nav.id}>
-      <a href="#">{nav.title}</a>
+      <a className='navbar__link' href="#">{nav.title}</a>
     </li>
   })
 
@@ -19,7 +19,7 @@ function NavbarData() {
          {navbarItem}
        </ul>
       </div>
-      <button>Booking Now</button>
+      <button className='navbar__btn'>Booking Now</button>
     </div>
   )
 }

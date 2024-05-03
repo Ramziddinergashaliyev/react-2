@@ -1,0 +1,103 @@
+.menu {
+  padding: 40px 0px;
+}
+
+.menu__text {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  color: #dc780b;
+}
+.menu__title {
+  font-family: Philosopher;
+  font-size: 31.25px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+.menu__desc__card {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.menu__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.manu__card__info {
+  padding: 20px;
+}
+
+.menu__card__img {
+  width: 100%;
+}
+.menu__card {
+  box-shadow: 1px 1px 10px rgb(206, 200, 200);
+  border-top-left-radius: 75px;
+  border-top-right-radius: 10px;
+}
+
+.menu__card:hover {
+  box-shadow: 1px 1px 10px rgb(175, 167, 167);
+}
+
+.menu__info__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.menu__info__top__text {
+  font-family: Philosopher;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
+.menu__desc {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #150c01;
+  padding: 10px 0px;
+}
+
+.menu__card__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottom__count {
+  padding: 5px 10px;
+  color: white;
+  background-color: #dc780b;
+  border-radius: 2px;
+}
+
+@media (max-width: 950px) {
+  .menu__cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .menu__cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+}
